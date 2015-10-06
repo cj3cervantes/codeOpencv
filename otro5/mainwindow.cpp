@@ -1,3 +1,4 @@
+
 #include "mainwindow.h"
 #include "pieceslist.h"
 #include "puzzlewidget.h"
@@ -5,14 +6,19 @@
 #include <QtWidgets>
 #include <stdlib.h>
 
+// cambio aqui
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
     setupMenus();
+    //setupWidgets();
+    //setupWidgets();
     setupWidgets();
-
     setSizePolicy(QSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed));
-    setWindowTitle(tr("Puzzle"));
+    setSizePolicy(QSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed));
+    setWindowTitle(tr("Puzzle 123"));
+    
 }
 
 void MainWindow::openImage(const QString &path)
